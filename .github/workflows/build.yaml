@@ -13,14 +13,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: "true"
-          fetch-depth: 0
-      - name: Update submodules
-        run: |
-          git config --global user.name "Github Actions"
-          git config --global user.email "noreply@example.com"
-          git submodule update --remote --recursive
+      #   with:
+      #     submodules: "true"
+      #     fetch-depth: 0
+      # - name: Update submodules
+      #   run: |
+      #     git config --global user.name "Github Actions"
+      #     git config --global user.email "noreply@example.com"
+      #     git submodule update --remote --recursive
       - name: Set up Ruby 3.2
         uses: ruby/setup-ruby@ec02537da5712d66d4d50a0f33b7eb52773b5ed1
         with:

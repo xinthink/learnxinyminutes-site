@@ -8,7 +8,7 @@
 /.sass-cache
 
 # Ignore actual docs (separate repository)
-/source/docs
+# /source/docs
 
 # Editors
 /.idea
