@@ -31,8 +31,8 @@ jobs:
       - name: Run middleman
         run: bundle exec middleman build --verbose || exit 0  # Build probably will have errors
 
-      - name: Make build/docs not a submodule
-        run: rm -rf build/docs/.git || exit 0
+      # - name: Make build/docs not a submodule
+      #   run: rm -rf build/docs/.git || exit 0
 
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
